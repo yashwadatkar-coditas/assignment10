@@ -8,6 +8,7 @@ class AuthorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final message = ModalRoute.of(context)!.settings.arguments;
     return  Scaffold(
       appBar: AppBar(title: Text('Author')),
       body: Column(
